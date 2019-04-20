@@ -1,21 +1,146 @@
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
 \usepackage[finnish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={160mm, 247mm}]{geometry}
+
+\usepackage{listings}
+\usepackage{color}
+
+\renewcommand\lstlistingname{Turska}
+\renewcommand\lstlistlistingname{Turskat}
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinelanguage{turska}{
+  keywords={kokkeeks, jasitviel, huomioi, uuvetjaot},
+  keywordstyle=\color{blue}\bfseries,
+  keywords=[2]{Lapanen, Seikka, Zydeemi},
+  keywordstyle=[2]\color{green}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=true,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstdefinestyle{turska}{
+    language=turska,
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    showlines=true,
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+%     morekeywords={kokkeeks, huomioi, jasitviel},
+    tabsize=2
+}
+
+\lstset{style=turska}
+
 \usepackage{multicol}
+\usepackage[
+  backend=biber,
+  style=ieee
+] {biblatex}
+\addbibresource{lapaset.bib}
+
+
 \title{Lapanen lapanen lapanen: Lapanen lapanen}
 \date{}
-\author{Pedro Lapanen\\CAPS LOCK ACADEMY}
+\author{Pedro Lapanen\\CAPS LOCK aCADEMY}
+
 \begin{document}
 \maketitle
-\renewcommand{\abstractname}{Lapaslapanen}
-\begin{abstract}
-Lapanen lapanen, lapanen -- käsin. Lapanen lapanen lapanen, kokkeeks. Lapanen. Lapanen lapanen, lapanen lapanen.
-Lapanen käsin "Lapanen", sano.
-\end{abstract}
-\begin{multicols}{2}
-\section{Lapanen!}
-Lapanen, lapanen. Lapanen lapanen lapanen.
-\end{multicols}
-\end{document}
 
+\renewcommand{\abstractname}{Lapaslapanen}
+
+\begin{abstract}
+
+Lapanen lapanen, lapanen -- käsin. Lapanen lapanen lapanen, kokkeeks. Lapanen. Lapanen lapanen, lapanen lapanen.
+Lapanen käsin "Lapanen", sano. Lapanen lapanen lapanen lapanen, "lapanen", lapanen.
+
+\end{abstract}
+
+\begin{multicols}{2}
+
+\section{Lapanen}
+Lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen  
+\textit{lapanen}lapanen lapanen lapanen lapanen lapanen. 
+Lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
+
+Lapanen, lapanen lapanen lapanen, lapanen lapanen, lapanen lapanen lapanen "lapanen lapanen" lapanen "lapanen lapanen" lapanen.
+Lapanen, lapanen lapanen lapanen lapanen lapanen lapanen (lapanen lapanen) \cite{lapanen} lapanen lapanen lapanen lapanen lapanen,
+lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
+Lapanen, lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen, lapanen lapanen lapanen, lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
+
+Lapanen: lapanen lapanen lapanen 147 lapanen lapanen. Lapanen lapanen lapanen Lapanema lapanen,
+lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
+Lapanen, lapanen lapanen lapanen lapanen lapanen lapanen \cite{liplap} lapanen lapanen, \textit{kokkeeks} lapanen lapanen lapanen, lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
+
+\vfill\null
+\columnbreak
+
+\section{Lapanen päähän}
+
+Lapanen, lapanen. Lapanen lapanen lapanen \cite{lapanen}. Lapanen, LAPANEN lapanen lapanen; lapanen. Päähän \cite{turska}.
+
+
+\begin{lstlisting}[numbers=none, caption=Lapanen kokkeeks käsin]
+
+  kokkeeks {
+    Lapanen lapanen = uuvetjaot Lapanen();
+    lapanen.lapata();
+  } huomioi (Seikka s) {
+    s.tunppaa(Zydeemi.ulos);
+  } jasitviel {
+    lapanen.pois();
+  }
+  
+\end{lstlisting}
+
+
+\section{Lapanen päähän}
+
+Lapanen, lapanen. Lapanen lapanen lapanen. Lapanen, LAPANEN lapanen lapanen; lapanen. Päähän \cite{kokkeeks}.
+
+
+\begin{lstlisting}[numbers=none, caption=Lip-lap lapanen: Lavanne]
+
+  kokkeeks {
+    Lapanen lapanen = uuvetjaot Lapanen();
+    lapanen.lapata();
+  } huomioi (Seikka s) {
+    s.tunppaa(Zydeemi.ulos);
+  } jasitviel {
+    lapanen.pois();
+  }
+  
+\end{lstlisting}
+
+
+
+
+\end{multicols}
+
+\printbibliography[title={Lapautteet}]
+\lstlistoflistings
+
+
+\end{document}

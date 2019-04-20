@@ -1,9 +1,20 @@
 \documentclass[a4paper]{article}
+
 \usepackage[T1]{fontenc}
 \usepackage[finnish]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage[a4paper, total={160mm, 247mm}]{geometry}
+\usepackage[
+  a4paper,
+  total={160mm,247mm}
+]{geometry}
+\usepackage{pgfplots}
+\pgfplotsset{width=6cm,compat=1.9}
 
+
+
+%
+%  For Turska listings
+%
 \usepackage{listings}
 \usepackage{color}
 
@@ -16,7 +27,7 @@
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
 \lstdefinelanguage{turska}{
-  keywords={kokkeeks, jasitviel, huomioi, uuvetjaot},
+  keywords={kokkeeks, sitäpaitsi, olimitenoli, huomioi, uuvetjaot},
   keywordstyle=\color{blue}\bfseries,
   keywords=[2]{Lapanen, Seikka, Zydeemi},
   keywordstyle=[2]\color{green}\bfseries,
@@ -37,21 +48,35 @@
     keywordstyle=\color{magenta},
     stringstyle=\color{codepurple},
     basicstyle=\ttfamily\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
     showlines=true,
-    numbersep=5pt,                  
-    showspaces=false,                
+    numbersep=5pt,
+    showspaces=false,
     showstringspaces=false,
-    showtabs=false,                  
+    showtabs=false,
 %     morekeywords={kokkeeks, huomioi, jasitviel},
     tabsize=2
 }
 
 \lstset{style=turska}
+\lstset{literate=%
+    {Ö}{{\"O}}1
+    {Ä}{{\"A}}1
+    {Ü}{{\"U}}1
+    {ß}{{\ss}}1
+    {ü}{{\"u}}1
+    {ä}{{\"a}}1
+    {ö}{{\"o}}1
+    {~}{{\textasciitilde}}1
+}
+
+
+\newcommand{\lokakuu}{}
+\addto\captionsfinnish{\renewcommand{\lokakuu}{Dokakuu}}
 
 \usepackage{multicol}
 \usepackage[
@@ -60,13 +85,28 @@
 ] {biblatex}
 \addbibresource{lapaset.bib}
 
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/multicol_hint.html
+\makeatletter
+\newenvironment{tablehere}
+  {\def\@captype{table}}
+  {}
+
+
+% https://texfaq.org/FAQ-latexwords
+\addto\captionsfinnish{
+  \renewcommand{\tablename}{Lapatin}
+  \renewcommand\listtablename{Lapattimet}
+}
 
 \title{Lapanen lapanen lapanen: Lapanen lapanen}
 \date{}
-\author{Pedro Lapanen\\CAPS LOCK aCADEMY}
+\author{Pedro Lapanen\\CAPS LOCK -LAPANEN}
 
 \begin{document}
+
 \maketitle
+
+\begin{multicols}{2}
 
 \renewcommand{\abstractname}{Lapaslapanen}
 
@@ -77,69 +117,90 @@ Lapanen käsin "Lapanen", sano. Lapanen lapanen lapanen lapanen, "lapanen", lapa
 
 \end{abstract}
 
-\begin{multicols}{2}
 
 \section{Lapanen}
+
 Lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen  
 \textit{lapanen}lapanen lapanen lapanen lapanen lapanen. 
 Lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
 
 Lapanen, lapanen lapanen lapanen, lapanen lapanen, lapanen lapanen lapanen "lapanen lapanen" lapanen "lapanen lapanen" lapanen.
 Lapanen, lapanen lapanen lapanen lapanen lapanen lapanen (lapanen lapanen) \cite{lapanen} lapanen lapanen lapanen lapanen lapanen,
-lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
+lapanen lapanen lapanen lapanen (lapanen lapanen) lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
 Lapanen, lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen, lapanen lapanen lapanen, lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
 
 Lapanen: lapanen lapanen lapanen 147 lapanen lapanen. Lapanen lapanen lapanen Lapanema lapanen,
 lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
 Lapanen, lapanen lapanen lapanen lapanen lapanen lapanen \cite{liplap} lapanen lapanen, \textit{kokkeeks} lapanen lapanen lapanen, lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
 
+
+\section{Lapanen lapanen}
+
+
+
+
 \vfill\null
 \columnbreak
 
-\section{Lapanen päähän}
-
-Lapanen, lapanen. Lapanen lapanen lapanen \cite{lapanen}. Lapanen, LAPANEN lapanen lapanen; lapanen. Päähän \cite{turska}.
-
-
-\begin{lstlisting}[numbers=none, caption=Lapanen kokkeeks käsin]
-
-  kokkeeks {
-    Lapanen lapanen = uuvetjaot Lapanen();
-    lapanen.lapata();
-  } huomioi (Seikka s) {
-    s.tunppaa(Zydeemi.ulos);
-  } jasitviel {
-    lapanen.pois();
-  }
-  
-\end{lstlisting}
+%\begin{tikzpicture}
+%\begin{axis}[
+%    title=Lapanen lapanen lapanen,
+%    hide axis,
+%    colormap/cool,
+%]
+%\addplot3[
+%    mesh,
+%    samples=50,
+%    domain=-8:8,
+%]
+%{sin(deg(sqrt(x^2+y^2)))/sqrt(x^2+y^2)};
+%\end{axis}
+%\end{tikzpicture}
 
 
-\section{Lapanen päähän}
+\section{Turska, lapanen käsin}
 
-Lapanen, lapanen. Lapanen lapanen lapanen. Lapanen, LAPANEN lapanen lapanen; lapanen. Päähän \cite{kokkeeks}.
+Lapanen, lapanen. Lapanen lapanen lapanen \cite{lapanen}. Lapanen, \texttt{Lapanen} lapanen lapanen; lapanen \cite{turska}.
+\texttt{huomioi Seikka s} \cite{huomiointi}
 
+\lstinputlisting[
+  language=Turska,
+  numbers=none,
+  caption=Lapanen kokkeeks käsin
+  ]{kokkeeks.turska}
 
-\begin{lstlisting}[numbers=none, caption=Lip-lap lapanen: Lavanne]
+Lapanen lapanen lapanen: \texttt{olimitenoli}\cite{olimitenoli}. Lapanen lapanen, lapanen: \textit{lapanen}. Lapanen
+lapanen lapanen lapanen, lapanen "KÄSIN". Lapanen lapanen "pituushyppy", lapanen lapanen lapanen (2011).
 
-  kokkeeks {
-    Lapanen lapanen = uuvetjaot Lapanen();
-    lapanen.lapata();
-  } huomioi (Seikka s) {
-    s.tunppaa(Zydeemi.ulos);
-  } jasitviel {
-    lapanen.pois();
-  }
-  
-\end{lstlisting}
+Lapanen: \texttt{lapauta *.turska}, sano.
 
+\section{Taulunento}
 
+Lapanen \ref{tab:table1} lapanen \textit{lapanen}, lapanen!
 
-
-\end{multicols}
+\begin{tablehere}
+\begin{center}
+\label{tab:table1}
+\begin{tabular}{ |r|c|c| }
+ \hline
+ \textbf{Lapanen} & \textbf{Lip} & \textbf{Lap} \\
+ \hline
+ Lap     & 100 & 147 \\
+ Lapardi & 3,5 & EI NÄIN \\
+ Lip     & 313 & KOKKEEKS \\
+ \hline
+\end{tabular}
+\caption{
+  \textbf{Lapanen lapanen:} lapanen lapanen. Lapanen-lapanen, lapanen
+  lapanen, lapardi. Lip-lap-lapanen lapanen, \textit{lapanen} lapanen lapanen.
+}
+\end{center}
+\end{tablehere}
 
 \printbibliography[title={Lapautteet}]
 \lstlistoflistings
+%\listoftables
 
+\end{multicols}
 
 \end{document}

@@ -1,0 +1,14 @@
+
+ /*
+  * Lapanen lapanen lapanen, lapanen
+  */
+  kokkeeks {
+    Lapanen lapanen = uuvetjaot Lapanen();
+    lapanen.lapata();
+  } huomioi (Seikka seikka) {
+    s.tunppaa(Zydeemi.ulos);
+  } olimitenoli {
+    // lapanen lapanen, "Lapanen" lapanen
+    lapanen.pois();
+  }
+

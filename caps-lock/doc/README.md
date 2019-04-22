@@ -4,4 +4,4 @@
 
 * `lapanen-lapanen-lapanen.tex` sisältää itse tekstin [KÄSIN](https://caps-lock.lapanen.org/lapaute/kasin/).
 * `lapaset.bib` sisältää "kirjallisuusluettelon"
-* `kokkeeks.turska` taasen on turska-näyte.
+* `kokkeeks.turska` ja `kokkeeks.turska` taasen ovat turska-näytteitä.

@@ -1,3 +1,6 @@
+%
+% This file contains very baaad LaTeX stuff. Blame the author, please.
+%
 \documentclass[a4paper]{article}
 
 \usepackage[T1]{fontenc}
@@ -10,16 +13,15 @@
 \usepackage{pgfplots}
 \pgfplotsset{width=6cm,compat=1.9}
 
-
-
 %
-%  For Turska listings
+% For Turska listings
 %
 \usepackage{listings}
 \usepackage{color}
-
-\usepackage{csquotes}
-
+%
+% Override; this should probably be done by using a new language,
+% but alas, don't know how it's done.
+%
 \renewcommand\lstlistingname{Turska}
 \renewcommand\lstlistlistingname{Turskat}
 
@@ -75,10 +77,8 @@
 }
 
 
-\newcommand{\lokakuu}{}
-\addto\captionsfinnish{\renewcommand{\lokakuu}{Dokakuu}}
-
 \usepackage{multicol}
+
 \usepackage[
   backend=biber,
   style=ieee
@@ -91,14 +91,18 @@
   {\def\@captype{table}}
   {}
 
-
 % https://texfaq.org/FAQ-latexwords
 \addto\captionsfinnish{
   \renewcommand{\tablename}{Lapatin}
   \renewcommand\listtablename{Lapattimet}
 }
 
+%
+% The "actual" stuff begins here
+%
+
 \title{Lapanen lapanen lapanen: Lapanen lapanen}
+% A hack to suppress the date.
 \date{}
 \author{Pedro Lapanen\\CAPS LOCK -LAPANEN\\\texttt{caps-lock.lapanen.org}}
 
@@ -108,6 +112,7 @@
 
 \begin{multicols}{2}
 
+
 \renewcommand{\abstractname}{Lapaslapanen}
 
 \begin{abstract}
@@ -116,7 +121,6 @@ Lapanen lapanen, lapanen -- käsin. Lapanen lapanen lapanen, kokkeeks. Lapanen. 
 Lapanen käsin ``Lapanen'', sano. Lapanen lapanen lapanen lapanen, ``lapanen'' (lapanen-lapanen)
 lapanen\footnote{\textbf{Lapanen, Lapanen:} lapanen lapanen lapanen}.
 
-
 \end{abstract}
 
 
@@ -124,18 +128,20 @@ lapanen\footnote{\textbf{Lapanen, Lapanen:} lapanen lapanen lapanen}.
 
 Lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen  
 \textit{lapanen}lapanen lapanen lapanen lapanen lapanen. 
-Lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
+Lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen\footnote{\textbf{Lapanen, Lapanen:} lapanen lapanen
+lapanen}.
 
-Lapanen, lapanen lapanen lapanen, lapanen lapanen, lapanen lapanen lapanen ``lapanen lapanen'' lapanen ``lapanen lapanen'' lapanen.
-Lapanen, lapanen lapanen lapanen lapanen lapanen lapanen (lapanen lapanen) \cite{lapanen} lapanen lapanen lapanen lapanen lapanen,
-lapanen lapanen lapanen lapanen (lapanen lapanen) lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
-Lapanen, lapanen \footnote{\textbf{Lapanen:} lapanen, lapardi \textit{tavallaan} lapanen}. lapanen lapanen lapanen
+Lapanen, lapanen lapanen lapanen, lapanen lapanen, lapanen lapanen lapanen ``lapanen lapanen'' lapanen ``lapanen
+lapanen'' lapanen. Lapanen, lapanen lapanen lapanen lapanen lapanen lapanen (lapanen lapanen)\cite{lapanen} lapanen
+lapanen lapanen lapanen lapanen, lapanen lapanen lapanen lapanen (lapanen lapanen) lapanen lapanen lapanen lapanen
+lapanen lapanen lapanen. Lapanen, lapanen lapanen, lapardi \textit{tavallaan} lapanen. lapanen lapanen lapanen
 lapanen lapanen lapanen lapanen, lapanen lapanen lapanen, lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
 
 
-Lapanen: lapanen lapanen lapanen 147 lapanen lapanen. Lapanen lapanen lapanen Lapanema lapanen,
-lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
-Lapanen, lapanen lapanen lapanen lapanen lapanen lapanen \cite{liplap} lapanen lapanen, \textit{kokkeeks} lapanen lapanen lapanen, lapanen lapanen lapanen lapanen lapanen lapanen lapanen.
+Lapanen: lapanen lapanen lapanen 147 lapanen lapanen. Lapanen lapanen lapanen Lapanema lapanen, lapanen lapanen
+lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen lapanen. Lapanen, lapanen lapanen
+lapanen lapanen lapanen lapanen \cite{liplap} lapanen lapanen, \textit{kokkeeks} lapanen lapanen lapanen, lapanen
+lapanen lapanen lapanen lapanen lapanen lapanen.
 
 
 \section{LAPANEN LAPANEN}
@@ -166,9 +172,19 @@ Lapanen lapanen lapanen, lapanen: lapanen lapanen pituushyppy, lapanen. Tavallaa
 
 \textbf{Lapanen}, ``lapanen'', lapanen, lapanen lapanen louhos, lapanen \footnote{\textit{Don't worry. it's tax free}}.
 
-\textit{Lapardi} neulonen lapanen lapanen lapanen, lapanen; louhimo -- avolouhos\footnote{Pakollinen pysähtyminen kielletty}
+\textit{Lapardi} neulonen lapanen lapanen lapanen, lapanen; louhimo -- avolouhos\footnote{\textit{Ei se o sama!}}
 lapanen lapanen: lapanen (lapanen), lapasteria, lapanen lapanen. Lapaset käteen, lapanen lapanen lapanen. Melkutin-lapanen
 lapaset lapanen, lapanen-lapanen.
+
+Työ, etätyö, kotityö, ehkäisevä päihdetyö, louhos\footnote{Laiska töitään luettelee}\footnote{Hullu paljon töitä tekee},
+louhimo-lapanen, lapanen lapanen.
+Lapanen lapanen lapanen, lapanen (lapanen) -- [ke|la]pardi.
+
+Lapanen lapanen lapanen: lapanen lapanen; lapanen lapanen, lapanen. Lapardi, lapaute, lapanen lapanen. Lapanen lapanen
+lapanen lapanen, lapanen-lapanen: lavanne.
+
+Lapanen lapanen, ``kultainen leikkaus'', lapanen lapanen louhos. Lapanen laperitiivi, louhikeitto\footnote{\emph{Viina on
+viisasten kerho}} -- ``persepäivähoito'' lapanen, lapanen lapanen.
 
 
 \section{Lapanen lapanen, lapanen}
@@ -200,8 +216,8 @@ Lapanen \ref{tab:table1} lapanen \textit{lapanen}, lapanen.
  \hline
 \end{tabular}
 \caption{
-  \textbf{Lapanen lapanen:} lapanen lapanen. Lapanen-lapanen, lapanen
-  lapanen, lapardi. Lip-lap-lapanen lapanen, \textit{lapanen} lapanen lapanen.
+  \footnotesize{\textbf{Lapanen lapanen:} lapanen lapanen. Lapanen-lapanen, lapanen
+  lapanen, lapardi. Lip-lap-lapanen lapanen, \textit{lapanen} lapanen lapanen.}
 }
 \end{center}
 \end{tablehere}
@@ -255,8 +271,9 @@ lapanen, sano. \textit{Mens lapanen in lapanen, sano} -- Lapanema lapanen, lapar
 
 \section{Turska, lapanen käsin}
 
-Lapanen, lapanen. Lapanen lapanen lapanen \cite{lapanen}. Lapanen, \texttt{Lapanen} lapanen lapanen; lapanen \cite{turska}.
-\texttt{huomioi Seikka s} \cite{huomiointi}. Tonnika-lapasta lapanen, lapanen käsin tavallaan lapardi.
+Lapanen, lapanen. Lapanen lapanen lapanen \cite{lapanen}. Lapanen, \texttt{Lapanen} lapanen lapanen; lapanen
+\cite{turska}. \texttt{huomioi Seikka s} \cite{huomiointi}. Tonnika-lapasta lapanen, lapanen käsin tavallaan
+lapardi\footnote{Pakollinen pysähtyminen kielletty}.
 
 \lstinputlisting[
   language=Turska,
@@ -273,7 +290,8 @@ lapanen lapanen lapanen, lapanen ``KÄSIN''. Lapanen lapanen ``pituushyppy'', la
   caption=Lapanen lapanen lapanen
   ]{lapanen.turska}
 
-Lapanen lapanen lapanen, lapanen; lapanen lapauta. Lapanen: \texttt{lapauta *.turska}, sano.
+Lapanen lapanen lapanen, lapanen; lapanen lapauta. Lapanen: \texttt{lapauta *.turska}, sano. Lapanen lapanen, lapanen;
+kokkeeks-lapanen: \texttt{yleislapanen.sh}.
 
 
 

@@ -1,0 +1,10 @@
+
+  // lapanen lapanen: lapanen-lapanen!
+  Lapanen lapanen = uuvetjaot Lapanen();
+  jospa(lapanen.lapauta() != nullahdus) {
+    Lapanen kokkeeksLapanen =
+      lapanen.lapauta().kokkeeksoi();
+    // huomioitava seikka
+    kokkeeksLapanen.käsin();
+  }
+

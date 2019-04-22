@@ -2,7 +2,7 @@
  /*
   * Lapanen lapanen lapanen, lapanen
   */
-  kokkeeks {
+  kokkeeks { // käsin?
     Lapanen lapanen = uuvetjaot Lapanen();
     lapanen.lapata();
   } huomioi (Seikka seikka) {

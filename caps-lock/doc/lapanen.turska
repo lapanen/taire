@@ -1,6 +1,7 @@
 
   // lapanen lapanen: lapanen-lapanen!
   Lapanen lapanen = uuvetjaot Lapanen();
+  // no jo nyt on!
   jospa(lapanen.lapauta() != nullahdus) {
     Lapanen kokkeeksLapanen =
       lapanen.lapauta().kokkeeksoi();

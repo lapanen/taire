@@ -5,7 +5,7 @@
   Lapanen lapanen = uuvetjaot Lapanen();
   kokkeeks { // käsin?
     lapanen.lapata();
-  } huomioi (Seikka seikka) {
+  } huomioi (Seikka s) {
     s.tunppaa(Zydeemi.ulos);
   } olimitenoli {
     // lapanen lapanen, "Lapanen" lapanen

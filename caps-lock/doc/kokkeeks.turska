@@ -2,13 +2,13 @@
  /*
   * Lapanen lapanen lapanen, lapanen
   */
+  Lapanen lapanen = uuvetjaot Lapanen();
   kokkeeks { // käsin?
-    Lapanen lapanen = uuvetjaot Lapanen();
     lapanen.lapata();
   } huomioi (Seikka seikka) {
     s.tunppaa(Zydeemi.ulos);
   } olimitenoli {
     // lapanen lapanen, "Lapanen" lapanen
-    lapanen.pois();
+    lapanen.päähän();
   }
 

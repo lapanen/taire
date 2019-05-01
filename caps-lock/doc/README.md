@@ -8,3 +8,4 @@ Artikkeli on julkaistu kokoelmassa [caps-lock.lapanen.org](https://caps-lock.lap
 * `kokkeeks.turska` ja `kokkeeks.turska` taasen ovat [TURSKA](https://caps-lock.lapanen.org/lapaute/seikkojen-huomiointi-turskan-tapaan/)-näytteitä.
 
 [Huononnus](https://caps-lock.lapanen.org/lapaute/huonontaa/)ehdotukset mieluiten GitHub-tapaan [käsin](https://caps-lock.lapanen.org/lapaute/kasin/).
+[Kakkein](https://caps-lock.lapanen.org/lapaute/kakki-pro-kaikki/) mieluiten kannattaa tietysti pidättäytyä moisesta.

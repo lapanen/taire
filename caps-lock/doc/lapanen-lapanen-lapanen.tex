@@ -16,6 +16,17 @@
 \usepackage{pgfplots}
 \pgfplotsset{width=6cm,compat=1.13}
 
+% http://www.texample.net/tikz/examples/simple-flow-chart/
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{positioning}
+
+% https://www.overleaf.com/learn/latex/CircuiTikz_package
+\usepackage{circuitikz}
+
+\usepackage{soul}
+
+
 %
 % For Turska listings
 %
@@ -94,10 +105,15 @@
 \newenvironment{tablehere}
   {\def\@captype{table}}
   {}
+\newenvironment{figurehere}
+  {\def\@captype{figure}}
+  {}
+\makeatother
 
 % https://texfaq.org/FAQ-latexwords
 \addto\captionsfinnish{
   \renewcommand{\tablename}{Lapatin}
+  \renewcommand{\figurename}{Lapaute}
   \renewcommand\listtablename{Lapattimet}
 }
 
@@ -129,7 +145,7 @@ Lapanen lapanen lapanen: lapanen lapanen. Lapanen-lapaset lapanen lapanen, lapan
 lapanen. Lapanen lapanen lapanen lapanen, lapanen lapanen. Lapanen lapanen lapanen, lapanen. Lapardi, lapanen
 lapanen lapanen (lapardi, lapanen). Lapaset lapanen lapaute, lip-lap.
 
-
+Lapanen lapanen: lapanen käsin, lapanen. Lip-lap.
 
 \end{abstract}
 
@@ -170,7 +186,8 @@ Lapanen lapanen lapanen \textit{$S$}, lapanen lapaset seikka lapanen \textit{$S^
 \forall(s \in S^*)\exists(h \in H)
 \end{equation}
 
-\textbf{Seikka} lapanen \textit{lapanen} lapanen, lapaset ``lapanen''.
+\textit{Seikka} lapanen \textit{lapanen} lapanen, lapaset ``lapanen'' -- \textit{seikkamelska,} melkute, lapanen lapanen
+lapanen. Lapanen lapanen: seikkabussi, muotoseikka, lapanen lapanen.
 
 
 \section{Louhos-lapanen}
@@ -187,7 +204,7 @@ lapaset lapanen, lapanen-lapanen.
 
 Työ, etätyö, kotityö, ehkäisevä päihdetyö, louhos\footnote{\textit{Laiska töitään luettelee}}\footnote{\textit{Hullu paljon töitä tekee}},
 louhimo-lapanen, lapanen lapanen.
-Lapanen lapanen lapanen, lapanen (lapanen) -- [ke|la]pardi.
+Lapanen lapanen lapanen, lapanen (lapanen) -- [ke|la]pardi. \textit{Käsi maassa maan tavalla-}
 
 Lapanen lapanen lapanen: lapanen lapanen; lapanen lapanen, lapanen. Lapardi, lapaute, lapanen lapanen. Lapanen lapanen
 lapanen lapanen, lapanen-lapanen: lavanne.
@@ -216,6 +233,9 @@ Lapasitiivinen reaktanssi:
 \begin{equation}
   X_{\Lambda} \equiv \frac{1}{2 \pi f \Lambda} = \frac{1}{\omega \Lambda}
 \end{equation}
+
+Lapaslapanen, käsin lapanen kokkeeks, sano. Lapasi-Tanssi -- ei näin. Lapanen lapanen lapanen lapanen, lapanen lapanen
+lapanan.
 
 
 \subsection{Lapanen, lapanen lapanen}
@@ -257,11 +277,11 @@ lapanen, sano. \textit{Mens lapanen in lapanen, sano} -- Lapanema lapanen, lapar
 \begin{axis}[
     title={Lapanen lapanen lapanen: lapaset},
     xlabel={Lapanen},
-    ylabel={Lapanen / lapanen},
-    xmin=0, xmax=100,
-    ymin=0, ymax=120,
-    xtick={0,20,40,60,80,100},
-    ytick={0,20,40,60,80,100,120},
+    ylabel={Lapanen lapanen},
+    xmin=0, xmax=10,
+    ymin=0, ymax=10,
+    xtick={0,2,4,6,8,10},
+    ytick={0,2,4,6,8,10},
     legend pos=north west,
     ymajorgrids=true,
     grid style=dashed,
@@ -272,9 +292,8 @@ lapanen, sano. \textit{Mens lapanen in lapanen, sano} -- Lapanema lapanen, lapar
     mark=triangle,
     ]
     coordinates {
-    (0,13.1)(10,17.5)(20,22)(30,27.8)(40,34.6)(60,51.8)(80,63.8)(100,84)
+    (0,1)(1,2)(2,3)(3,4)(4,5)(5,6)(6,7)(7,8)(8,9)(9,10)(10,10)
     };
-%    \legend{Lapaset 1}
 \addlegendentry{Lapanen}
 
 \addplot[
@@ -282,12 +301,15 @@ lapanen, sano. \textit{Mens lapanen in lapanen, sano} -- Lapanema lapanen, lapar
     mark=square,
     ]
     coordinates {
-    (0,23.1)(10,27.5)(20,32)(30,37.8)(40,44.6)(60,61.8)(80,83.8)(100,114)
+    (0,1.2)(1,2.4)(2,3.6)(3,4.8)(4,6)(5,7)(6,7)(7,8)(8,8)(9,7)(10,6)
     };
-\addlegendentry{2 Lapasta}
+\addlegendentry{Lapaset}
 
 \end{axis}
 \end{tikzpicture}
+
+Lapanen lapanen, lapanen, kokkeeks, sano. ``Yhden lapasen politiikka'', lapanen lapanen lapastuu
+lapanen\footnote{\textit{Haista ite la vista}}.
 
 
 \section{Turska-lapanen (käsin)}
@@ -304,6 +326,12 @@ lapardi\footnote{\textit{Pakollinen pysähtyminen kielletty}}.
 
 Lapanen lapanen lapanen: \texttt{olimitenoli}\cite{olimitenoli}. Lapanen lapanen, lapanen: \textit{lapanen}. Lapanen
 lapanen lapanen lapanen, lapanen ``KÄSIN''. Lapanen lapanen ``pituushyppy'', lapanen lapanen lapanen (2011).
+
+Lapanen, lapanen \& lapanen: lapanen lapanen. Lapanen-lapanen, lapaset, lapanen. \texttt{Seikka :: JuoksuAikaSeikka}
+lapanen lapanen \texttt{turska}.
+
+Lapanen, ``DIALT'' lapanen ``DIALTTT''\footnote{Do it at Least Twenty-Thousand Times}; \st{PHP} lapanen lapanen
+lapanen, lapanen. Lapanen lapanen lapanen lapanen: lapanen-lapaset -- lapanen!
 
 \lstinputlisting[
   language=Turska,
@@ -323,10 +351,10 @@ Lapanen lapanen, käsin, sano -- lip-lap-lapardi. Kokkeeks: \textit{mitä johtaj
 lapanen lapanen lapanen-lapanen. \textit{Oli miten oli, mutta näin on.} Lapanen lapanen: lapanen, ``lapanen'', lapanen
 lapanen lapanen, lapanen. Ihan kiva lapanen: lapanen lapanen, lapanen lapanen lapanen.
 
-Melkuttaa lapanen lapanen, lapanen lapanen lapanen: seikka pukkaa. Labanero \textit{säädöllinen murhenäytelmä}, lapanen
+Melkuttaa lapanen lapanen, lapanen lapanen lapanen: seikkaa pukkaa. Labanero \textit{säädöllinen murhenäytelmä}, lapanen
 lapanen. Lapanen-lapanen lapanen, lapanen. Näihäseo.
 
-Lapanen lapanen lapanen, lapanen lapanen. Sano ``sano'', sano.
+Lapanen lapanen lapanen, lapanen lapanen. Sano: ``sano'', sano.
 
 Lapaset lapanen lapardi, nääs-nääs, tiiäkkö: \textit{have you ever had any problems with your balls?} Lapanen lapanen
 lapanen: lapanen-lapanen. Lapardi lapanen lapanen lapanen, lavanne. Lapautus lapanen.
@@ -335,12 +363,12 @@ Lapanen lapanen lapanen, lapanen lapanen. Lapanen, lapanen lapanen lapanen: lapa
 lapanen, lapanen ``lapanen '', lapanen lapanen lapanen, lapanen. Lapanen: lapanen lapanen lapanen lapanen lapanen,
 lapanen lapanen lapanen. Lapanen lapanen: lapanen lapanen lapanen. Lapanen lapanen lapanen lapanen, lapanen lapanen
 lapanen-lapanen; lapanen lapanen. Lapanen lapanen, lapanen, lapanen, lapanen lapanen lapanen.
-Lapanen lapanen: lapanen lapanen lapanen\footnote{Lopusssa seisoo lapanen}.
+Lapanen lapanen lapanen: Lapanen lapanen\footnote{Lopusssa seisoo lapanen}.
 
 
 \printbibliography[title={Lapautteet}]
-\lstlistoflistings
-\listoftables
+%\lstlistoflistings
+%\listoftables
 
 \end{multicols}
 

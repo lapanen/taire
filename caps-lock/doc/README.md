@@ -1,6 +1,7 @@
 [Lapanen lapanen lapanen: Lapanen lapanen](https://caps-lock.lapanen.org/lapaute/lapanen-lapanen-lapanen-lapanen-lapanen/)
+===
 
-Artikkeli on julkaistu kokoelmassa [caps-lock.lapanen.org](https://caps-lock.lapanen.org/).
+Artikkeli on valitettavasti julkaistu kokoelmassa [caps-lock.lapanen.org](https://caps-lock.lapanen.org/).
 
 
 * `lapanen-lapanen-lapanen.tex` sisältää itse tekstin [KÄSIN](https://caps-lock.lapanen.org/lapaute/kasin/).

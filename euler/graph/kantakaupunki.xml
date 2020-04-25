@@ -19,7 +19,7 @@
         kerätty, joten tämä dokumentti toimii köykäisenä tietokantana muihinkin tarkoituksiin kuin
         kaupunginosien ja ne sisältävän verkon kuvaamiseen.
 
-      * Nimiavaruutta hallitaan kömpelösti s.e. esimerkiksi Kallion osa-alueen Linjat pienalueen
+      * name.fiavaruutta hallitaan kömpelösti s.e. esimerkiksi Kallion osa-alueen Linjat pienalueen
         1 tunniste ("id") on "kallio.linjat.1".
 
       TODO: katso, miten linkattaisiin jonkinlaiset alue-esitykset mukaan (GML, KML, ???)
@@ -27,97 +27,141 @@
     ]]>
   </desc>
 
-  <key id="kaupunginosanumero" for="node" attr.name="kaupunginosanumero" attr.type="int"/>
-  <key id="nimi" for="node" attr.name="nimi" attr.type="string"/>
+  <key id="region-number" for="node" attr.name="region-number" attr.type="int"/>
+  <key id="name.fi" for="node" attr.name="label" attr.type="string"/>
+  <key id="name.sv" for="node" attr.name="name.fi" attr.type="string"/>
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
 
   <graph id="kantakaupungin-kaupunginosat" edgedefault="undirected">
 
+
     <node id="kruununhaka">
-      <data key="kaupunginosanumero">1</data>
-      <data key="nimi">Kruununhaka</data>
+      <data key="region-number">1</data>
+      <data key="name.fi">Kruununhaka</data>
+      <!--<data key="label">Kruununhaka</data>-->
     </node>
+    <edge source="kruununhaka" target="kluuvi"></edge>
+    <edge source="kruununhaka" target="kaartinkaupunki"></edge>
+    <edge source="kruununhaka" target="katajanokka"></edge>
+    <edge source="kruununhaka" target="kallio"></edge>
+
 
     <node id="kluuvi">
-      <data key="kaupunginosanumero">2</data>
-      <data key="nimi">Kluuvi</data>
+      <data key="region-number">2</data>
+      <data key="name.fi">Kluuvi</data>
     </node>
+    <edge source="kluuvi" target="kaartinkaupunki"></edge>
+    <edge source="kluuvi" target="kamppi"></edge>
+    <edge source="kluuvi" target="kallio"></edge>
+    <edge source="kluuvi" target="kallio"></edge>
+    <edge source="kluuvi" target="etu-toolo"></edge>
+
 
     <node id="kaartinkaupunki">
-      <data key="kaupunginosanumero">3</data>
-      <data key="nimi">Kaartinkaupunki</data>
+      <data key="region-number">3</data>
+      <data key="name.fi">Kaartinkaupunki</data>
     </node>
+    <edge source="kaartinkaupunki" target="kamppi"></edge>
+    <edge source="kaartinkaupunki" target="punavuori"></edge>
+    <edge source="kaartinkaupunki" target="ullanlinna"></edge>
+    <edge source="kaartinkaupunki" target="katajanokka"></edge>
+
 
     <node id="kamppi">
-      <data key="kaupunginosanumero">4</data>
-      <data key="nimi">Kamppi</data>
+      <data key="region-number">4</data>
+      <data key="name.fi">Kamppi</data>
     </node>
+    <edge source="kamppi" target="punavuori"></edge>
+    <edge source="kamppi" target="etu-toolo"></edge>
+    <edge source="kamppi" target="lansisatama"></edge>
+
 
     <node id="punavuori">
-      <data key="kaupunginosanumero">5</data>
-      <data key="nimi">Punavuori</data>
+      <data key="region-number">5</data>
+      <data key="name.fi">Punavuori</data>
     </node>
+    <edge source="punavuori" target="eira"></edge>
+    <edge source="punavuori" target="ullanlinna"></edge>
+    <edge source="punavuori" target="lansisatama"></edge>
+
 
     <node id="eira">
-      <data key="kaupunginosanumero">6</data>
-      <data key="nimi">Eira</data>
+      <data key="region-number">6</data>
+      <data key="name.fi">Eira</data>
     </node>
+    <edge source="eira" target="ullanlinna"></edge>
+    <edge source="eira" target="lansisatama"></edge>
+
 
     <node id="ullanlinna">
-      <data key="kaupunginosanumero">7</data>
-      <data key="nimi">Ullanlinna</data>
+      <data key="region-number">7</data>
+      <data key="name.fi">Ullanlinna</data>
     </node>
+    <edge source="ullanlinna" target="kaivopuisto"></edge>
+
 
     <node id="katajanokka">
-      <data key="kaupunginosanumero">8</data>
-      <data key="nimi">Katajanokka</data>
+      <data key="region-number">8</data>
+      <data key="name.fi">Katajanokka</data>
     </node>
+
 
     <node id="kaivopuisto">
-      <data key="kaupunginosanumero">9</data>
-      <data key="nimi">Kaivopuisto</data>
+      <data key="region-number">9</data>
+      <data key="name.fi">Kaivopuisto</data>
     </node>
+
 
     <node id="sornainen">
-      <data key="kaupunginosanumero">10</data>
-      <data key="nimi">Sörnäinen</data>
+      <data key="region-number">10</data>
+      <data key="name.fi">Sörnäinen</data>
     </node>
+    <edge source="sornainen" target="kallio"></edge>
+    <edge source="sornainen" target="alppiharju"></edge>
+    <edge source="sornainen" target="mustikkamaa-korkeasaari"></edge>
+    <edge source="sornainen" target="hermanni"></edge>
+    <edge source="sornainen" target="vallila"></edge>
+
 
     <node id="kallio">
-      <data key="kaupunginosanumero">11</data>
-      <data key="nimi">Kallio</data>
+      
+      <desc>Kallio</desc>
+      <data key="region-number">11</data>
+      <data key="name.fi">Kallio</data>
 
       <graph edgedefault="undirected" id="kallio.osa-alueet">
 
         <node id="kallio.siltasaari">
-          <data key="nimi">Siltasaari</data>
+          <data key="name.fi">Siltasaari</data>
           <graph edgedefault="undirected">
             <node id="kallio.siltasaari.1">
-              <data key="nimi">Pienalue 1</data>
+              <data key="name.fi">Pienalue 1</data>
             </node>
             <node id="kallio.siltasaari.2">
-              <data key="nimi">Pienalue 2</data>
+              <data key="name.fi">Pienalue 2</data>
             </node>
             <edge source="kallio.siltasaari.1" target="kallio.siltasaari.2"/>
           </graph>
         </node>
 
         <node id="kallio.linjat">
-          <data key="nimi">Linjat</data>
+          <desc>Kallion osa-alue Linjat</desc>
+          <data key="name.fi">Linjat</data>
           <graph edgedefault="undirected">
             <node id="kallio.linjat.1">
-              <data key="nimi">Pienalue 1</data>
+              <data key="name.fi">Pienalue 1</data>
             </node>
             <node id="kallio.linjat.2">
-              <data key="nimi">Pienalue 2</data>
+              <data key="name.fi">Pienalue 2</data>
             </node>
             <node id="kallio.linjat.3">
-              <data key="nimi">Pienalue 3</data>
+              <data key="name.fi">Pienalue 3</data>
             </node>
           </graph>
         </node>
 
         <node id="kallio.torkkelinmaki">
-          <data key="nimi">Torkkelinmäki</data>
+          <data key="name.fi">Torkkelinmäki</data>
         </node>
 
         <edge id="kallio.siltasaari-linjat" source="kallio.siltasaari" target="kallio.linjat"/>
@@ -125,11 +169,97 @@
 
       </graph>
     </node>
+    <edge source="kallio" target="alppiharju"></edge>
+    <edge source="kallio" target="taka-toolo"></edge>
+
 
     <node id="alppiharju">
-      <data key="kaupunginosanumero">12</data>
-      <data key="nimi">Alppiharju</data>
+      <data key="region-number">12</data>
+      <data key="name.fi">Alppiharju</data>
     </node>
+    <edge source="alppiharju" target="taka-toolo"></edge>
+    <edge source="alppiharju" target="pasila"></edge>
+    <edge source="alppiharju" target="vallila"></edge>
+
+
+    <node id="etu-toolo">
+      <data key="region-number">13</data>
+      <data key="name.fi">Etu-Töölö</data>
+    </node>
+    <edge source="etu-toolo" target="taka-toolo"></edge>
+    <edge source="etu-toolo" target="lansisatama"></edge>
+
+
+    <node id="taka-toolo">
+      <data key="region-number">14</data>
+      <data key="name.fi">Taka-Töölö</data>
+    </node>
+
+    <node id="meilahti">
+      <data key="region-number">15</data>
+      <data key="name.fi">Meilahti</data>
+    </node>
+
+    <node id="ruskeasuo">
+      <data key="region-number">16</data>
+      <data key="name.fi">Ruskeasuo</data>
+    </node>
+
+    <node id="pasila">
+      <data key="region-number">17</data>
+      <data key="name.fi">Pasila</data>
+    </node>
+
+    <node id="laakso">
+      <data key="region-number">18</data>
+      <data key="name.fi">Laakso</data>
+    </node>
+
+    <node id="mustikkamaa-korkeasaari">
+      <data key="region-number">19</data>
+      <data key="name.fi">Mustikkamaa Korkeasaari</data>
+    </node>
+
+    <node id="lansisatama">
+      <data key="region-number">20</data>
+      <data key="name.fi">Länsisatama</data>
+    </node>
+
+    <node id="hermanni">
+      <data key="region-number">21</data>
+      <data key="name.fi">Hermanni</data>
+    </node>
+
+    <node id="vallila">
+      <data key="region-number">22</data>
+      <data key="name.fi">Vallila</data>
+    </node>
+
+    <node id="toukola">
+      <data key="region-number">23</data>
+      <data key="name.fi">Toukola</data>
+    </node>
+
+    <node id="kumpula">
+      <data key="region-number">24</data>
+      <data key="name.fi">Kumpula</data>
+    </node>
+
+    <node id="kapyla">
+      <data key="region-number">25</data>
+      <data key="name.fi">Käpylä</data>
+    </node>
+
+    <node id="koskela">
+      <data key="region-number">26</data>
+      <data key="name.fi">Koskela</data>
+    </node>
+
+    <node id="vanhakaupunki">
+      <data key="region-number">27</data>
+      <data key="name.fi">Vanhakaupunki</data>
+    </node>
+
 
   </graph>
 

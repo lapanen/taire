@@ -2,7 +2,29 @@
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns">
 
   <desc>
-    
+    <![CDATA[
+
+      Tämä GraphML-dokumentti kuvaa Helsingin kantakaupungin kaupunginosien, niiden osa-alueiden
+      ja osa-auleiden osien ("pienalue") suhteita toisiinsa:
+
+      * Kaupunginosa-solmujen lapsina on aliverkko, joka edustaa osa-alueita, ja niiden
+        lapsina taasen pienalueet sisältävä aliverkko.
+
+      * Eri tasojen osien väliset sivut (kaari, haara) edustavat osien välistä maayhteyttä:
+        ks. esim. solmua "kallio.siltasaari-linjat", joka kuvaa sitä, että Kallion osa-alueesta
+        Siltasaari pääsee maateitse osa-alueeseen Linjat. Sivut ovat suunnistamattomat, mutta
+        "source"-solmuksi on valittu aina se alue, jonka tunnusnumero on pienempi.
+
+      * Kuhunkin alueeseen liittyy joitakin metatiedon sirpaleita, joita on sieltä täältä
+        kerätty, joten tämä dokumentti toimii köykäisenä tietokantana muihinkin tarkoituksiin kuin
+        kaupunginosien ja ne sisältävän verkon kuvaamiseen.
+
+      * Nimiavaruutta hallitaan kömpelösti s.e. esimerkiksi Kallion osa-alueen Linjat pienalueen
+        1 tunniste ("id") on "kallio.linjat.1".
+
+      TODO: katso, miten linkattaisiin jonkinlaiset alue-esitykset mukaan (GML, KML, ???)
+
+    ]]>
   </desc>
 
   <key id="kaupunginosanumero" for="node" attr.name="kaupunginosanumero" attr.type="int"/>
@@ -63,10 +85,44 @@
     <node id="kallio">
       <data key="kaupunginosanumero">11</data>
       <data key="nimi">Kallio</data>
+
       <graph edgedefault="undirected" id="kallio.osa-alueet">
-        <node id="linjat">
-          <data key="nimi">Linjat</data>
+
+        <node id="kallio.siltasaari">
+          <data key="nimi">Siltasaari</data>
+          <graph edgedefault="undirected">
+            <node id="kallio.siltasaari.1">
+              <data key="nimi">Pienalue 1</data>
+            </node>
+            <node id="kallio.siltasaari.2">
+              <data key="nimi">Pienalue 2</data>
+            </node>
+            <edge source="kallio.siltasaari.1" target="kallio.siltasaari.2"/>
+          </graph>
         </node>
+
+        <node id="kallio.linjat">
+          <data key="nimi">Linjat</data>
+          <graph edgedefault="undirected">
+            <node id="kallio.linjat.1">
+              <data key="nimi">Pienalue 1</data>
+            </node>
+            <node id="kallio.linjat.2">
+              <data key="nimi">Pienalue 2</data>
+            </node>
+            <node id="kallio.linjat.3">
+              <data key="nimi">Pienalue 3</data>
+            </node>
+          </graph>
+        </node>
+
+        <node id="kallio.torkkelinmaki">
+          <data key="nimi">Torkkelinmäki</data>
+        </node>
+
+        <edge id="kallio.siltasaari-linjat" source="kallio.siltasaari" target="kallio.linjat"/>
+        <edge source="kallio.linjat" target="kallio.torkkelinmaki"/>
+
       </graph>
     </node>
 

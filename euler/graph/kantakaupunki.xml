@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+
+  <desc>
+    
+  </desc>
+
+  <key id="kaupunginosanumero" for="node" attr.name="kaupunginosanumero" attr.type="int"/>
+  <key id="nimi" for="node" attr.name="nimi" attr.type="string"/>
+
+  <graph id="kantakaupungin-kaupunginosat" edgedefault="undirected">
+
+    <node id="kruununhaka">
+      <data key="kaupunginosanumero">1</data>
+      <data key="nimi">Kruununhaka</data>
+    </node>
+
+    <node id="kluuvi">
+      <data key="kaupunginosanumero">2</data>
+      <data key="nimi">Kluuvi</data>
+    </node>
+
+    <node id="kaartinkaupunki">
+      <data key="kaupunginosanumero">3</data>
+      <data key="nimi">Kaartinkaupunki</data>
+    </node>
+
+    <node id="kamppi">
+      <data key="kaupunginosanumero">4</data>
+      <data key="nimi">Kamppi</data>
+    </node>
+
+    <node id="punavuori">
+      <data key="kaupunginosanumero">5</data>
+      <data key="nimi">Punavuori</data>
+    </node>
+
+    <node id="eira">
+      <data key="kaupunginosanumero">6</data>
+      <data key="nimi">Eira</data>
+    </node>
+
+    <node id="ullanlinna">
+      <data key="kaupunginosanumero">7</data>
+      <data key="nimi">Ullanlinna</data>
+    </node>
+
+    <node id="katajanokka">
+      <data key="kaupunginosanumero">8</data>
+      <data key="nimi">Katajanokka</data>
+    </node>
+
+    <node id="kaivopuisto">
+      <data key="kaupunginosanumero">9</data>
+      <data key="nimi">Kaivopuisto</data>
+    </node>
+
+    <node id="sornainen">
+      <data key="kaupunginosanumero">10</data>
+      <data key="nimi">Sörnäinen</data>
+    </node>
+
+    <node id="kallio">
+      <data key="kaupunginosanumero">11</data>
+      <data key="nimi">Kallio</data>
+      <graph edgedefault="undirected" id="kallio.osa-alueet">
+        <node id="linjat">
+          <data key="nimi">Linjat</data>
+        </node>
+      </graph>
+    </node>
+
+    <node id="alppiharju">
+      <data key="kaupunginosanumero">12</data>
+      <data key="nimi">Alppiharju</data>
+    </node>
+
+  </graph>
+
+</graphml>

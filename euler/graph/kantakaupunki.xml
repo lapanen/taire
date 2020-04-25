@@ -194,66 +194,98 @@
       <data key="region-number">14</data>
       <data key="name.fi">Taka-Töölö</data>
     </node>
+    <edge source="taka-toolo" target="meilahti"></edge>
+    <edge source="taka-toolo" target="pasila"></edge>
+    <edge source="taka-toolo" target="laakso"></edge>
+
 
     <node id="meilahti">
       <data key="region-number">15</data>
       <data key="name.fi">Meilahti</data>
     </node>
+    <edge source="meilahti" target="ruskeasuo"></edge>
+    <edge source="meilahti" target="laakso"></edge>
+
 
     <node id="ruskeasuo">
       <data key="region-number">16</data>
       <data key="name.fi">Ruskeasuo</data>
     </node>
+    <edge source="ruskeasuo" target="pasila"></edge>
+    <edge source="ruskeasuo" target="laakso"></edge>
+
 
     <node id="pasila">
       <data key="region-number">17</data>
       <data key="name.fi">Pasila</data>
     </node>
+    <edge source="pasila" target="vallila"></edge>
+    <edge source="pasila" target="kumpula"></edge>
+    <edge source="pasila" target="kapyla"></edge>
+
 
     <node id="laakso">
       <data key="region-number">18</data>
       <data key="name.fi">Laakso</data>
     </node>
 
+
     <node id="mustikkamaa-korkeasaari">
       <data key="region-number">19</data>
       <data key="name.fi">Mustikkamaa Korkeasaari</data>
     </node>
+
 
     <node id="lansisatama">
       <data key="region-number">20</data>
       <data key="name.fi">Länsisatama</data>
     </node>
 
+
     <node id="hermanni">
       <data key="region-number">21</data>
       <data key="name.fi">Hermanni</data>
     </node>
+    <edge source="hermanni" target="vallila"></edge>
+    <edge source="hermanni" target="toukola"></edge>
+
 
     <node id="vallila">
       <data key="region-number">22</data>
       <data key="name.fi">Vallila</data>
     </node>
+    <edge source="vallila" target="kumpula"></edge>
+
 
     <node id="toukola">
       <data key="region-number">23</data>
       <data key="name.fi">Toukola</data>
     </node>
+    <edge source="toukola" target="kumpula"></edge>
+    <edge source="toukola" target="vanhakaupunki"></edge>
+
 
     <node id="kumpula">
       <data key="region-number">24</data>
       <data key="name.fi">Kumpula</data>
     </node>
+    <edge source="kumpula" target="kapyla"></edge>
+    <edge source="kumpula" target="koskela"></edge>
+    <edge source="kumpula" target="vanhakaupunki"></edge>
+
 
     <node id="kapyla">
       <data key="region-number">25</data>
       <data key="name.fi">Käpylä</data>
     </node>
+    <edge source="kapyla" target="koskela"></edge>
+
 
     <node id="koskela">
       <data key="region-number">26</data>
       <data key="name.fi">Koskela</data>
     </node>
+    <edge source="koskela" target="vanhakaupunki"></edge>
 
     <node id="vanhakaupunki">
       <data key="region-number">27</data>

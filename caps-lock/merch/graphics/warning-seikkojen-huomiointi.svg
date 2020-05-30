@@ -1,1 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="168.5269mm"
+   height="93.53627mm"
+   viewBox="0 0 597.14256 331.42773"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="warning-seikkojen-huomiointi.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="202.091"
+     inkscape:cy="75.28484"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2151"
+     inkscape:window-height="1403"
+     inkscape:window-x="2200"
+     inkscape:window-y="1024"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-56.572266,-201.93359)">
+    <g
+       id="g4188"
+       transform="translate(4,0)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3336"
+         y="284.64792"
+         x="349.07135"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:40px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:'FreeSans Semi-Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="284.64792"
+           x="349.07135"
+           id="tspan3338"
+           sodipodi:role="line">Seikkojen huomioiminen</tspan><tspan
+           id="tspan3340"
+           y="334.64792"
+           x="349.07135"
+           sodipodi:role="line">voi johtaa tuskalliseen</tspan><tspan
+           id="tspan3342"
+           y="384.64792"
+           x="354.61823"
+           sodipodi:role="line">toimenpiteiden </tspan><tspan
+           id="tspan3344"
+           y="434.64792"
+           x="354.61823"
+           sodipodi:role="line">suorittamiseen. </tspan><tspan
+           id="tspan3352"
+           y="484.64792"
+           x="349.07135"
+           sodipodi:role="line">Älä aloita.</tspan><tspan
+           id="tspan3346"
+           y="534.64795"
+           x="349.07135"
+           sodipodi:role="line" /></text>
+      <g
+         transform="translate(0,-4)"
+         id="g4182">
+        <g
+           transform="translate(2,0)"
+           id="g4185">
+          <path
+             inkscape:connector-curvature="0"
+             style="fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect3373"
+             d="m 60.572266,215.93359 0,311.42774 577.142574,0 0,-311.42774 -577.142574,0 z" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

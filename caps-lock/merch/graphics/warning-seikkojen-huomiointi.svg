@@ -58,52 +58,50 @@
      id="layer1"
      transform="translate(-56.572266,-201.93359)">
     <g
-       id="g4188"
-       transform="translate(4,0)">
-      <text
-         sodipodi:linespacing="125%"
-         id="text3336"
-         y="284.64792"
-         x="349.07135"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:40px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:'FreeSans Semi-Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="284.64792"
-           x="349.07135"
-           id="tspan3338"
-           sodipodi:role="line">Seikkojen huomioiminen</tspan><tspan
-           id="tspan3340"
-           y="334.64792"
-           x="349.07135"
-           sodipodi:role="line">voi johtaa tuskalliseen</tspan><tspan
-           id="tspan3342"
-           y="384.64792"
-           x="354.61823"
-           sodipodi:role="line">toimenpiteiden </tspan><tspan
-           id="tspan3344"
-           y="434.64792"
-           x="354.61823"
-           sodipodi:role="line">suorittamiseen. </tspan><tspan
-           id="tspan3352"
-           y="484.64792"
-           x="349.07135"
-           sodipodi:role="line">Älä aloita.</tspan><tspan
-           id="tspan3346"
-           y="534.64795"
-           x="349.07135"
-           sodipodi:role="line" /></text>
+       id="g4182"
+       transform="translate(4,-4)"
+       style="fill:#ffffff;fill-opacity:1">
       <g
-         transform="translate(0,-4)"
-         id="g4182">
-        <g
-           transform="translate(2,0)"
-           id="g4185">
-          <path
-             inkscape:connector-curvature="0"
-             style="fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             id="rect3373"
-             d="m 60.572266,215.93359 0,311.42774 577.142574,0 0,-311.42774 -577.142574,0 z" />
-        </g>
+         id="g4185"
+         transform="translate(2,0)"
+         style="fill:#ffffff;fill-opacity:1">
+        <path
+           d="m 60.572266,215.93359 0,311.42774 577.142574,0 0,-311.42774 -577.142574,0 z"
+           id="rect3373"
+           style="fill:#ffffff;stroke:#000000;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+           inkscape:connector-curvature="0" />
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:40px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:'FreeSans Semi-Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="353.07135"
+       y="284.64792"
+       id="text3336"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3338"
+         x="353.07135"
+         y="284.64792">Seikkojen huomioiminen</tspan><tspan
+         sodipodi:role="line"
+         x="353.07135"
+         y="334.64792"
+         id="tspan3340">voi johtaa tuskalliseen</tspan><tspan
+         sodipodi:role="line"
+         x="358.61823"
+         y="384.64792"
+         id="tspan3342">toimenpiteiden </tspan><tspan
+         sodipodi:role="line"
+         x="358.61823"
+         y="434.64792"
+         id="tspan3344">suorittamiseen. </tspan><tspan
+         sodipodi:role="line"
+         x="353.07135"
+         y="484.64792"
+         id="tspan3352">Älä aloita.</tspan><tspan
+         sodipodi:role="line"
+         x="353.07135"
+         y="534.64795"
+         id="tspan3346" /></text>
   </g>
 </svg>
